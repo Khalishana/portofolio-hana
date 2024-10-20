@@ -32,8 +32,8 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Redux",
-    Image: "/redux.png",
+    name: "Rust",
+    Image: "/rust.png",
     width: 80,
     height: 80,
   },
@@ -51,14 +51,14 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Framer Motion",
-    Image: "/framer.png",
+    name: "Python",
+    Image: "/python.png",
     width: 80,
     height: 80,
   },
   {
-    name: "Stripe Payment",
-    Image: "/stripe.webp",
+    name: "Java",
+    Image: "/java.png",
     width: 80,
     height: 80,
   },
@@ -69,25 +69,49 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Mongo db",
-    Image: "/mongodb.png",
-    width: 40,
-    height: 40,
+    name: "Springboot",
+    Image: "/springboot.png",
+    width: 100,
+    height: 100,
+  },
+  {
+    name: "Django",
+    Image: "/django.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    name: "Golang",
+    Image: "/golang.png",
+    width: 120,
+    height: 120,
+  },
+  {
+    name: "Figma",
+    Image: "/figma.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "Bootstrap",
+    Image: "/bootstrap.png",
+    width: 80,
+    height: 80,
   },
 ];
 
 export const Socials = [
   {
-    name: "Discord",
+    name: "Instagram",
     src: "/instagram.svg",
   },
   {
-    name: "Facebook",
-    src: "/facebook.svg",
+    name: "Linkedin",
+    src: "/linkedin.png",
   },
   {
-    name: "Instagram",
-    src: "/discord.svg",
+    name: "Gmail",
+    src: "/gmail.png",
   },
 ];
 export const Projects = [

@@ -25,8 +25,8 @@ const Navbar = () => {
                     key={social.name}
                     src={social.src}
                     alt={social.name}
-                    width={28}
-                    height={28}
+                    width={40}
+                    height={40}
                 />
                ) 
 
