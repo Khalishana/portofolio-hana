@@ -8,7 +8,7 @@ import Image from "next/image";
 import {Autoplay} from 'swiper/modules'
 import { tree } from "next/dist/build/templates/app-page";
 
-const Page = () => {
+const MySkills = () => {
     return (
         <div 
         style={{backgroundImage: "url(/bg-2.jpg"}}
@@ -73,4 +73,4 @@ const Page = () => {
     );
 };
 
-export default Page
+export default MySkills

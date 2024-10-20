@@ -1,6 +1,5 @@
 import React from 'react';
 import ContactForm from './contactForm'; // Import ContactForm
-import ContactInfo from './contactInfo'; // Import ContactInfo
 
 const ContactMe = () => {
   return (
@@ -17,8 +16,6 @@ const ContactMe = () => {
           {/* Contact Form */}
           <ContactForm />
 
-          {/* Contact Info */}
-          {/* <ContactInfo /> */}
         </div>
       </div>
     </div>
