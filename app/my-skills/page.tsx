@@ -22,9 +22,6 @@ const Page = () => {
             Technologies
         </span>
         </h1>
-          {/* <p className="text-gray-400 text-[20px]">
-            Experienced Technologies
-          </p> */}
         </div>
         <Swiper
         slidesPerView={5}

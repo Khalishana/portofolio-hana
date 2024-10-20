@@ -196,6 +196,33 @@ export default function Home() {
       <div id="contact-me" className="h-screen bg-cover bg-center">
       <ContactMe />
       </div>
+
+     {/* Footer */}
+     <footer className="bg-purple-600 text-white py-5 rounded-t-[40px] -mt-1">
+        <div className="max-w-[80%] mx-auto text-center">
+          <h2 className="text-lg font-semibold">Contact Me</h2>
+          <p className="mt-2">Email: khalisha.hana10@gmail.com</p>
+          <p>Phone Number: +62 859-3913-8227</p>
+
+          <div className="flex justify-center mt-4 space-x-4">
+            <a href="https://www.instagram.com/khalishana10/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src="/instagram.svg" alt="Instagram" className="w-8 h-8 hover:opacity-80" />
+            </a>
+            <a href="https://www.linkedin.com/in/khalisha-hana/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="/linkedin.png" alt="LinkedIn" className="w-8 h-8 hover:opacity-80" />
+            </a>
+            <a href="https://github.com/Khalishana" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img src="/github.png" alt="GitHub" className="w-8 h-8 hover:opacity-80" />
+            </a>
+          </div>
+
+          {/* Copyright Section */}
+          <div className="mt-5 border-t border-white pt-3">
+            <p className="text-sm">© 2024 Khalisha Hana. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
     </main>
   );
 }
