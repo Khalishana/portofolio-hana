@@ -1,94 +1,118 @@
+"use client"
+import { SkillData } from "@/constants";
 import Image from "next/image";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
+import 'swiper/css'
 
 export default function Home() {
   return (
-    <main className="w-screen h-screen relative">
+    <main className="w-screen h-auto relative">
+      {/* Main Section */}
       <div
-        className="flex items-center w-full h-full bg-cover bg-center"
+        className="flex items-center w-full h-screen bg-cover bg-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
-        <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w [750px]">
-        <h1 className="text-[50px] text-white font-semibold">
-          Make anything possible with <br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 block md:inline">
-            Web Development
-          </span>
-        </h1>
-          <p className="text-gray-200 hidden md:block">Lorem Ipsum</p>
+        <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] ">
+          <h1 className="text-[50px] text-white font-semibold">
+            Welcome to Khalisha Hana's <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 block md:inline">
+              Portofolio Website
+            </span>
+          </h1>
+          <p className="text-gray-200 text-xl hidden md:block">A portofolio website by Khalisha Hana, penultimate year Computer Science Student at University of Indonesia</p>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
-            <a
-              href="/my-skills"
-              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
+            {/* <a
+              href="#my-skills"
+              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] cursor-pointer"
             >
               My Skills
             </a>
             <a
-              href="/my-projects"
-              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
+              href="#my-projects"
+              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] cursor-pointer"
             >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group:hover:opacity-20" />
               My Projects
+            </a> */}
+            <a
+              href="https://drive.google.com/file/d/1N8YXAL1wmZmUNLqoIr4QzcLSLTHHJxBF/view?usp=sharing"
+              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] cursor-pointer"
+            >
+              See My CV
             </a>
             <a
-              href="/contact-me"
-              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
+              href="#contact-me"
+              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] cursor-pointer"
             >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group:hover:opacity-20" />
               Contact Me
             </a>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
-        <a
-          href="/my-skills"
-          className="rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
-        >
-          My Skills
-        </a>
-        <a
-          href="/my-projects"
-          className="rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
-        >
-          My Projects
-        </a>
-        <a
-          href="/contact-me"
-          className="rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
-        >
-          Contact Me
-        </a>
+      {/* My Skills Section */}
+      <div id="my-skills" className="h-screen bg-cover bg-center relative">
+        <div className="flex items-center justify-center h-full bg-cover bg-center"
+          style={{ backgroundImage: "url(/bg-2.jpg)" }}>
+          <div className="flex flex-col gap-20 max-w-[80%] text-center items-center">
+            <div className="flex flex-col items-center gap-4">
+              <h1 className="font-semibold text-white text-[50px]">
+                Experienced&nbsp;
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 block md:inline">
+                  Technologies
+                </span>
+              </h1>
+            </div>
+
+            {/* Swiper Component */}
+            <Swiper
+              slidesPerView={5}
+              loop={true}
+              autoplay={{ delay: 0, disableOnInteraction: false }}
+              speed={5000}
+              modules={[Autoplay]}
+              className="max-w-[80%]"
+            >
+              {SkillData.map((skill, index) => (
+                <SwiperSlide key={index}>
+                  <Image
+                    src={skill.Image}
+                    alt={skill.name}
+                    width={skill.width}
+                    height={skill.height}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* Reverse Swiper */}
+            <Swiper
+              slidesPerView={5}
+              loop={true}
+              autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true }}
+              speed={5000}
+              modules={[Autoplay]}
+              className="max-w-[80%]"
+            >
+              {SkillData.map((skill, index) => (
+                <SwiperSlide key={index}>
+                  <Image
+                    src={skill.Image}
+                    alt={skill.name}
+                    width={skill.width}
+                    height={skill.height}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
       </div>
 
-      <div className="absolute bottom-0 right-0 z-[10]">
-        <Image
-          src="/horse.png"
-          alt="horse"
-          height={300}
-          width={300}
-          className="absolute right-55 top-40"
-        />
-
-        <Image src="/cliff.webp" alt="cliff" width={400} height={400} />
-      </div>
-
-      <div className="absolute bottom-0 z-[5] w-full h-auto">
-        <Image
-          src="/trees.webp"
-          alt="trees"
-          width={2000}
-          height={2000}
-          className="w-full h-full"
-        />
-      </div>
-      <Image
-        src="/stars.png"
-        alt="stars"
-        width={300}
-        height={300}
-        className="absolute top-0 left-0 z-[10]"
-      />
+      {/* Additional Sections like Contact Me or Projects */}
+      <div id="my-projects" className="h-screen bg-cover bg-center">My Projects Section</div>
+      <div id="contact-me" className="h-screen bg-cover bg-center">Contact Me Section</div>
     </main>
   );
 }
