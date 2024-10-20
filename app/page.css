@@ -1,0 +1,17 @@
+/* Animasi fade-in untuk elemen teks */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Muncul dari bawah */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Berhenti di posisi normal */
+    }
+  }
+  
+  /* Class untuk menerapkan animasi fade-in */
+  .fade-in {
+    opacity: 0; /* Memulai dengan elemen yang tidak terlihat */
+    animation: fadeIn 1.5s ease-out forwards; /* Durasi animasi 1.5 detik */
+  }  

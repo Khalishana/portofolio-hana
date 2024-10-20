@@ -8,6 +8,7 @@ import 'swiper/css';
 import ContactMe from "./contact-me/page";
 import MyProjects from "./my-projects/page";
 import MySkills from "./my-skills/page";
+import "./page.css";
 
 export default function Home() {
   return (
@@ -18,14 +19,14 @@ export default function Home() {
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] ">
-          <h1 className="text-[50px] text-white font-semibold">
+          <h1 className="text-[50px] text-white font-semibold fade-in">
             Welcome to Khalisha Hana's <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 block md:inline">
               Portofolio Website
             </span>
           </h1>
-          <p className="text-gray-200 text-xl hidden md:block">A portofolio website by Khalisha Hana, penultimate year Computer Science Student at University of Indonesia</p>
-          <div className="flex-col md:flex-row hidden md:flex gap-5">
+          <p className="text-gray-200 text-xl hidden md:block fade-in" style={{ animationDelay: '0.5s' }}>A portofolio website by Khalisha Hana, penultimate year Computer Science Student at University of Indonesia</p>
+          <div className="flex-col md:flex-row hidden md:flex gap-5 fade-in" style={{ animationDelay: '1s' }}>
             <a
               href="https://drive.google.com/file/d/1N8YXAL1wmZmUNLqoIr4QzcLSLTHHJxBF/view?usp=sharing"
               className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] cursor-pointer"
