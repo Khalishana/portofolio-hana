@@ -1,14 +1,11 @@
 "use client"
-import { SkillData } from "@/constants";
-import Image from "next/image";
-import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 import React from "react";
 import 'swiper/css';
 import ContactMe from "./contact-me/page";
 import MyProjects from "./my-projects/page";
 import MySkills from "./my-skills/page";
 import "./page.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -80,7 +77,7 @@ export default function Home() {
           aria-label="Instagram"
           className="transition-transform duration-300 hover:scale-110"
         >
-          <img src="/instagram.svg" alt="Instagram" className="w-10 h-10" />
+          <Image src="/instagram.svg" alt="Instagram" className="w-10 h-10" />
         </a>
         <a
           href="https://www.linkedin.com/in/khalisha-hana/"
@@ -89,7 +86,7 @@ export default function Home() {
           aria-label="LinkedIn"
           className="transition-transform duration-300 hover:scale-110"
         >
-          <img src="/linkedin.png" alt="LinkedIn" className="w-12 h-12" />
+          <Image src="/linkedin.png" alt="LinkedIn" className="w-12 h-12" />
         </a>
         <a
           href="https://github.com/Khalishana"
@@ -98,7 +95,7 @@ export default function Home() {
           aria-label="GitHub"
           className="transition-transform duration-300 hover:scale-110"
         >
-          <img src="/github.png" alt="GitHub" className="w-10 h-10" />
+          <Image src="/github.png" alt="GitHub" className="w-10 h-10" />
         </a>
       </div>
 

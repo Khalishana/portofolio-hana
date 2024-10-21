@@ -1,12 +1,10 @@
 "use client"
-import exp from "constants";
 import React from "react";
 import {Swiper, SwiperSlide} from "swiper/react"
 import 'swiper/css'
 import { SkillData } from "@/constants";
 import Image from "next/image";
 import {Autoplay} from 'swiper/modules'
-import { tree } from "next/dist/build/templates/app-page";
 
 const MySkills = () => {
     return (
