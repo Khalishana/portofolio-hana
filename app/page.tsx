@@ -17,7 +17,7 @@ export default function Home() {
       >
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] ">
           <h1 className="text-[50px] text-white font-semibold fade-in">
-            Welcome to Khalisha Hana's <br />
+          Welcome to Khalisha Hana&apos;s <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 block md:inline">
               Portofolio Website
             </span>
@@ -77,7 +77,7 @@ export default function Home() {
           aria-label="Instagram"
           className="transition-transform duration-300 hover:scale-110"
         >
-          <Image src="/instagram.svg" alt="Instagram" className="w-10 h-10" />
+          <Image src="/instagram.svg" alt="Instagram" className="w-10 h-10" width={40} height={40}/>
         </a>
         <a
           href="https://www.linkedin.com/in/khalisha-hana/"
@@ -86,7 +86,7 @@ export default function Home() {
           aria-label="LinkedIn"
           className="transition-transform duration-300 hover:scale-110"
         >
-          <Image src="/linkedin.png" alt="LinkedIn" className="w-12 h-12" />
+          <Image src="/linkedin.png" alt="LinkedIn" className="w-12 h-12" width={40} height={40}/>
         </a>
         <a
           href="https://github.com/Khalishana"
@@ -95,7 +95,7 @@ export default function Home() {
           aria-label="GitHub"
           className="transition-transform duration-300 hover:scale-110"
         >
-          <Image src="/github.png" alt="GitHub" className="w-10 h-10" />
+          <Image src="/github.png" alt="GitHub" className="w-10 h-10" width={40} height={40}/>
         </a>
       </div>
 
