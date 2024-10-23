@@ -34,8 +34,8 @@ export const SkillData = [
   {
     name: "Rust",
     Image: "/rust.png",
-    width: 80,
-    height: 80,
+    width: 85,
+    height: 85,
   },
 
   {
@@ -63,8 +63,8 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Node js",
-    Image: "/node-js.png",
+    name: "Flutter",
+    Image: "/flutter.png",
     width: 80,
     height: 80,
   },

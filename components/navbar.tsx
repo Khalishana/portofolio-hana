@@ -16,7 +16,10 @@ const Navbar = () => {
                         />
                     </a>
                 </div>
-                <h1 className="text-white text-[25px] font-semibold">Portofolio Hana</h1>
+                <a href="#top">
+                    <h1 className="text-white text-[25px] font-semibold">Portofolio Hana</h1>
+                </a>
+                {/* <h1 className="text-white text-[25px] font-semibold">Portofolio Hana</h1> */}
             </div>
 
             {/* Navigation Links */}

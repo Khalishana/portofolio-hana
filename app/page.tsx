@@ -25,7 +25,7 @@ export default function Home() {
           <p className="text-gray-200 text-xl hidden md:block fade-in" style={{ animationDelay: '0.5s' }}>A portofolio website by Khalisha Hana, penultimate year Computer Science Student at University of Indonesia</p>
           <div className="flex-col md:flex-row hidden md:flex gap-5 fade-in" style={{ animationDelay: '1s' }}>
             <a
-              href="https://drive.google.com/file/d/1N8YXAL1wmZmUNLqoIr4QzcLSLTHHJxBF/view?usp=sharing"
+              href="https://univindonesia-my.sharepoint.com/:b:/g/personal/khalisha_hana_office_ui_ac_id/EZh6vpwOorxJgVg8BpWGItEBoQdZq1n6LU583D8A88mw9w?e=0aZBha"
               className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] cursor-pointer"
             >
               See My CV
