@@ -15,24 +15,26 @@ export default function Home() {
         className="flex items-center w-full h-screen bg-cover bg-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
-        <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] ">
-          <h1 className="text-[50px] text-white font-semibold fade-in">
+        <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] pt-20">
+          <h1 className="text-[30px] md:text-[50px] text-white font-semibold fade-in">
           Welcome to Khalisha Hana&apos;s <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 block md:inline">
               Portofolio Website
             </span>
           </h1>
-          <p className="text-gray-200 text-xl hidden md:block fade-in" style={{ animationDelay: '0.5s' }}>A portofolio website by Khalisha Hana, penultimate year Computer Science Student at University of Indonesia</p>
-          <div className="flex-col md:flex-row hidden md:flex gap-5 fade-in" style={{ animationDelay: '1s' }}>
+          <p className="text-gray-200 text-sm md:text-xl fade-in" style={{ animationDelay: '0.5s' }}>
+            A portofolio website by Khalisha Hana, penultimate year Computer Science Student at University of Indonesia
+          </p>
+          <div className="flex gap-4 flex-row fade-in" style={{animationDelay: '1s'}}>
             <a
               href="https://univindonesia-my.sharepoint.com/:b:/g/personal/khalisha_hana_office_ui_ac_id/EZh6vpwOorxJgVg8BpWGItEBoQdZq1n6LU583D8A88mw9w?e=0aZBha"
-              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] cursor-pointer"
+              className="rounded-[20px] group relative bg-transparent px-3 py-2 md:px-5 md:py-3 border border-white text-sm md:text-lg text-white max-w-[150px] md:max-w-[200px] cursor-pointer"
             >
               See My CV
             </a>
             <a
               href="#contact-me"
-              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] cursor-pointer"
+              className="rounded-[20px] group relative bg-transparent px-3 py-2 md:px-5 md:py-3 border border-white text-sm md:text-lg text-white max-w-[150px] md:max-w-[200px] cursor-pointer"
             >
               Contact Me
             </a>
@@ -63,8 +65,8 @@ export default function Home() {
       </div>
 
      {/* Footer */}
-     <footer className="bg-gradient-to-r from-purple-600 to-purple-400 text-white py-8 rounded-t-[40px]" style={{ marginTop: '-5px', marginLeft: '-8px' }}>
-    <div className="max-w-[80%] mx-auto text-center">
+     <footer className="bg-gradient-to-r from-purple-600 to-purple-400 text-white py-4 md:py-8 rounded-t-[40px] overflow-hidden" style={{ marginTop: '-8px', marginLeft: '-15px' }}>
+    <div className="max-w-full md:max-w-[80%] mx-auto text-center">
       <h2 className="text-lg font-semibold mb-2">Contact Me</h2>
       <p className="mb-1">Email: khalisha.hana10@gmail.com</p>
       <p>Phone Number: +62 859-3913-8227</p>

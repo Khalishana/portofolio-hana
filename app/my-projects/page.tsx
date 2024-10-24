@@ -10,7 +10,7 @@ const MyProjects = () => {
     >
       <div className="h-auto bg-cover bg-center p-10">
         <div className="flex flex-col items-center">
-          <h1 className="font-semibold text-white text-[50px] mb-8">
+          <h1 className="font-semibold text-white text-[30px] md:text-[50px] mb-8">
             My&nbsp;
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               Projects

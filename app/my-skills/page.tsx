@@ -14,7 +14,7 @@ const MySkills = () => {
         >
             <div className="flex flex-col gap-20 max-w-[80%] text-center items-center">
         <div className="flex flex-col items-center gap-4">
-        <h1 className="font-semibold text-white text-[50px] mt-[100px] space-y-2">
+        <h1 className="font-semibold text-white text-[30px] md:text-[50px] mt-[100px] space-y-2">
         Experienced&nbsp; 
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 block md:inline">
             Technologies
