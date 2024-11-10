@@ -1,11 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body {
-    overflow: auto;
-}
-
-html {
-    scroll-behavior: smooth;
-}

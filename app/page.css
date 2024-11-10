@@ -14,4 +14,4 @@
   .fade-in {
     opacity: 0; /* Memulai dengan elemen yang tidak terlihat */
     animation: fadeIn 1.5s ease-out forwards; /* Durasi animasi 1.5 detik */
-  }  
+  } 
