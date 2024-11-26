@@ -39,6 +39,36 @@ export default function Home() {
               Contact Me
             </a>
           </div>
+           {/* Social Media Icons */}
+           <div className="flex items-center gap-4 ml-4">
+              <a
+                href="https://www.instagram.com/khalishana10/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="transition-transform duration-300 hover:scale-110"
+              >
+                <Image src="/instagram.svg" alt="Instagram" className="w-6 h-6 md:w-8 md:h-8" width={32} height={32} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/khalisha-hana/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="transition-transform duration-300 hover:scale-110"
+              >
+                <Image src="/linkedin-app-white-icon.webp" alt="LinkedIn" className="w-6 h-6 md:w-8 md:h-8" width={32} height={32} />
+              </a>
+              <a
+                href="https://github.com/Khalishana"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="transition-transform duration-300 hover:scale-110"
+              >
+                <Image src="/github-white-icon.webp" alt="GitHub" className="w-6 h-6 md:w-8 md:h-8" width={32} height={32} />
+              </a>
+            </div>
         </div>
       </div>
 
@@ -63,51 +93,6 @@ export default function Home() {
       <div id="contact-me" className="h-screen bg-cover bg-center">
       <ContactMe />
       </div>
-
-     {/* Footer */}
-     <footer className="bg-gradient-to-r from-purple-600 to-purple-400 text-white rounded-t-lg overflow-hidden mt-auto">
-  <div className="max-w-full md:max-w-[80%] mx-auto mt-auto text-center py-6">
-    <h2 className="text-lg font-semibold mb-2">Contact Me</h2>
-    <p className="mb-1">Email: khalisha.hana10@gmail.com</p>
-    <p>Phone Number: +62 859-3913-8227</p>
-
-    <div className="flex justify-center mt-6 space-x-6">
-      <a
-        href="https://www.instagram.com/khalishana10/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Instagram"
-        className="transition-transform duration-300 hover:scale-110"
-      >
-        <Image src="/instagram.svg" alt="Instagram" className="w-8 h-8 md:w-10 md:h-10" width={40} height={40} />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/khalisha-hana/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn"
-        className="transition-transform duration-300 hover:scale-110"
-      >
-        <Image src="/linkedin.png" alt="LinkedIn" className="w-8 h-8 md:w-10 md:h-10" width={40} height={40} />
-      </a>
-      <a
-        href="https://github.com/Khalishana"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="GitHub"
-        className="transition-transform duration-300 hover:scale-110"
-      >
-        <Image src="/github.png" alt="GitHub" className="w-8 h-8 md:w-10 md:h-10" width={40} height={40} />
-      </a>
-    </div>
-
-    {/* Copyright Section */}
-    <div className="mt-6 border-t border-white pt-4">
-      <p className="text-sm">© 2024 Khalisha Hana. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
 
     </main>
   );
