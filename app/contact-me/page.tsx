@@ -3,7 +3,15 @@ import ContactForm from './contactForm'; // Import ContactForm
 
 const ContactMe = () => {
   return (
-    <div className="h-auto bg-cover bg-center flex items-center p-10" style={{ backgroundImage: "url(/bg-3.jpg)" }}>
+    <div
+      className="min-h-screen bg-cover bg-center flex items-center p-10"
+      style={{
+        backgroundImage: "url(/bg-3.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="max-w-[80%] mx-auto text-center">
         <h1 className="text-[30px] md:text-[50px] font-semibold text-white mb-8">
           Further&nbsp;
@@ -15,7 +23,6 @@ const ContactMe = () => {
         <div className="flex justify-center">
           {/* Contact Form */}
           <ContactForm />
-
         </div>
       </div>
     </div>

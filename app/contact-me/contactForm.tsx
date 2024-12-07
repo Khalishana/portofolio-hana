@@ -22,7 +22,7 @@ const ContactForm = () => {
         ></textarea>
         <button
           type="submit"
-          className="bg-purple-600 text-white py-2 px-6 rounded-lg hover:bg-purple-700 transition-colors duration-300"
+          className="inline-block text-sm font-medium bg-gradient-to-r from-purple-600 to-pink-600 text-white px-5 py-2 rounded-lg hover:from-pink-600 hover:to-purple-600 transition-colors duration-300"
         >
           Send Message
         </button>
