@@ -34,7 +34,7 @@ export default function Home() {
             style={{ animationDelay: "1s" }}
           >
             <a
-              href="https://univindonesia-my.sharepoint.com/:b:/g/personal/khalisha_hana_office_ui_ac_id/EZh6vpwOorxJgVg8BpWGItEBoQdZq1n6LU583D8A88mw9w?e=0aZBha"
+              href="https://univindonesia-my.sharepoint.com/:b:/g/personal/khalisha_hana_office_ui_ac_id/Ec4OmHySa9JFhTfDzaX3hGEB0qTMSKH_4bc-eLb3sUumjQ?e=hYnvDH"
               className="rounded-[20px] group relative bg-transparent px-3 py-2 md:px-5 md:py-3 border border-white text-sm md:text-lg text-white max-w-[150px] md:max-w-[200px] cursor-pointer"
             >
               See My CV
