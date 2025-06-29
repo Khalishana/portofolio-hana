@@ -33,7 +33,7 @@ const MyProjects = () => {
               description:
                 "Explored patient data to uncover health trends and built predictive models using machine learning algorithms such as Decision Tree, Linear Regression, and K-Means Clustering.",
               image: "/kasdad.jpg",
-              link: "https:ristek.link/DatSciFinalProject",
+              link: "https://ristek.link/DatSciFinalProject",
               github: "https://github.com/Khalishana/finalcode_kasdad",
             },
             {
