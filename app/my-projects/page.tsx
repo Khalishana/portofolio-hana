@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const MyProjects = () => {
   return (
@@ -21,18 +22,19 @@ const MyProjects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5">
           {[
             {
-              title: "Readme",
+              title: "BudidayaPlus",
               description:
-                "Developed a book inventory website utilizing HTML, CSS, JavaScript, and the Python Django framework. The project focused on building a functional and responsive web application for managing and buying books.",
-              image: "/readme.jpg",
-              link: "https://readme.up.railway.app/",
+                "BudidayaPlus is a web application built with TypeScript and designed with a mobile view interface to support catfish farming, covering everything from water quality monitoring to task management.",
+              image: "/budidayaplus.jpg",
+              link: "https://budidayaplus-fe-gray.vercel.app/",
             },
             {
-              title: "Marmut",
+              title: "Health Admission Analysis",
               description:
-                "Developed a song inventory website utilizing HTML, CSS, JavaScript, and the Python Django framework, with PostgreSQL for database management. Features include role-based access control, playlist management, premium subscriptions, and more.",
-              image: "/marmut.jpg",
-              link: "https://web-production-8be4.up.railway.app/",
+                "Explored patient data to uncover health trends and built predictive models using machine learning algorithms such as Decision Tree, Linear Regression, and K-Means Clustering.",
+              image: "/kasdad.jpg",
+              link: "https:ristek.link/DatSciFinalProject",
+              github: "https://github.com/Khalishana/finalcode_kasdad",
             },
             {
               title: "ZenZone",
@@ -61,17 +63,47 @@ const MyProjects = () => {
               <div>
                 <h2 className="text-xl font-semibold text-white mb-2">{project.title}</h2>
                 <p className="text-sm text-gray-300 mb-4">{project.description}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-sm font-medium bg-gradient-to-r from-purple-600 to-pink-600 text-white px-5 py-2 rounded-lg hover:from-pink-600 hover:to-purple-600 transition-colors duration-300"
-                >
-                  View Details →
-                </a>
+                <div className="flex items-center gap-3">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium bg-gradient-to-r from-purple-600 to-pink-600 text-white px-5 py-2 rounded-lg hover:from-pink-600 hover:to-purple-600 transition-colors duration-300"
+                  >
+                    View Details →
+                  </a>
+
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub Repository"
+                      className="transition-transform duration-300 hover:scale-110"
+                    >
+                      <Image
+                        src="/github-white-icon.webp"
+                        alt="GitHub"
+                        width={24}
+                        height={24}
+                        className="w-8 h-8 md:w-9 md:h-9"
+                      />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Button: See All My Projects */}
+        <div className="flex justify-center mt-10">
+          <Link
+            href="/all-projects"
+            className="inline-block text-sm font-medium bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-lg hover:from-pink-600 hover:to-purple-600 transition-colors duration-300"
+          >
+            See All My Projects →
+          </Link>
         </div>
       </div>
     </div>
