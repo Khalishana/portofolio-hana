@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, {useState} from "react";
 
 const ContactForm = () => {
   const [status, setStatus] = useState("");
@@ -29,7 +29,7 @@ const ContactForm = () => {
       } else {
         setStatus("Failed to send message.");
       }
-    } catch (error) {
+    } catch {
       setStatus("An error occurred while sending the message.");
     }
   };
