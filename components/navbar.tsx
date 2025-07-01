@@ -58,6 +58,9 @@ const Navbar = () => {
                 <a href="#my-projects" className="hover:text-purple-500 transition duration-300">
                     My Projects
                 </a>
+                <a href="#experiences" className="hover:text-purple-500 transition duration-300">
+                    Experiences
+                </a>
                 <a href="#contact-me" className="hover:text-purple-500 transition duration-300">
                     Contact Me
                 </a>

@@ -4,6 +4,7 @@ import "swiper/css";
 import ContactMe from "./contact-me/page";
 import MyProjects from "./my-projects/page";
 import MySkills from "./my-skills/page";
+import Experiences from "./experiences/page";
 import "./page.css";
 import Image from "next/image";
 
@@ -106,6 +107,11 @@ export default function Home() {
       {/* My Projects Section */}
       <div id="my-projects" className="bg-cover bg-center">
         <MyProjects />
+      </div>
+
+      {/* Experiences Section */}
+      <div id="experiences" className="min-h-screen bg-cover bg-center">
+        <Experiences />
       </div>
 
       {/* Contact Me Section */}
