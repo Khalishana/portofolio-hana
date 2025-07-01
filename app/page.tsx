@@ -27,7 +27,7 @@ export default function Home() {
             className="text-gray-200 text-sm md:text-xl fade-in"
             style={{ animationDelay: "0.5s" }}
           >
-            A portofolio website by Khalisha Hana, penultimate year Computer
+            A portofolio website by Khalisha Hana, final year Computer
             Science Student at University of Indonesia
           </p>
           <div
@@ -128,7 +128,7 @@ export default function Home() {
 
           {/* Copyright Section */}
           <div className="mt-6 border-t border-white pt-4">
-            <p className="text-sm">© 2024 Khalisha Hana. All rights reserved.</p>
+            <p className="text-sm">© 2025 Khalisha Hana. All rights reserved.</p>
           </div>
         </div>
       </footer>

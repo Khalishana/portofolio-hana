@@ -11,6 +11,8 @@ const projects = [
       "BudidayaPlus is a web application built with TypeScript and designed with a mobile view interface to support catfish farming, covering everything from water quality monitoring to task management.",
     image: "/budidayaplus.jpg",
     link: "https://budidayaplus-fe-gray.vercel.app/",
+    role: "Fullstack Developer",
+    techStack: ["TypeScript", "Next.js", "Django Ninja"],
   },
   {
     title: "Health Admission Analysis",
@@ -19,36 +21,46 @@ const projects = [
     image: "/kasdad.jpg",
     link: "https://ristek.link/DatSciFinalProject",
     github: "https://github.com/Khalishana/finalcode_kasdad",
+    role: "Data Scientist",
+    techStack: ["Python", "Pandas", "Scikit-learn"],
   },
   {
     title: "ZenZone",
     description:
-      "Mental health mobile app prototype with community, consultation, panic button.",
+      "Designed an interactive mental health mobile application prototype using Figma. Features include mental health community, consultations, motivational content, and a panic button for immediate assistance.",
     image: "/zenzone.jpg",
     link: "https://www.figma.com/proto/LA5D4eppKAnqxgsbIe2mH9/TK-Template-4?page-id=15%3A3&node-id=217-1277&node-type=frame&viewport=408%2C608%2C0.13&t=gWaIkGsIQOInjPE4-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=217%3A1273&show-proto-sidebar=1",
+    role: "UI/UX Designer",
+    techStack: ["Figma", "UI/UX", "Prototyping"],
   },
   {
     title: "Handling Catastrophic Forgetting in TTS with Interleaved Replay",
     description:
-      "Mental health mobile app prototype with community, consultation, panic button.",
+      "Applied interleaved learning approach to prevent catastrophic forgetting in speech synthesis models, including inference demo and research paper.",
     image: "/pbl.jpg",
     link: "https://ristek.link/demo-pbl",
     github: "https://github.com/Khalishana/finalcode_pbl",
-    paper:"https://ristek.link/paper-pbl",
+    paper: "https://ristek.link/paper-pbl",
+    role: "AI/ML Engineer",
+    techStack: ["PyTorch", "Speech Synthesis", "Machine Learning"],
   },
   {
     title: "Readme",
     description:
-      "Book inventory website using Django & JS for managing and buying books.",
+      "Book inventory website that support managing and buying books, making quotes, post forums.",
     image: "/readme.jpg",
     link: "https://readme.up.railway.app/",
+    role: "Fullstack Developer",
+    techStack: ["Django", "JavaScript", "HTML/CSS"],
   },
   {
     title: "Marmut",
     description:
-      "Song inventory with role-based access, PostgreSQL DB, playlist, and premium.",
+      "Song inventory with role-based access built with PostgreSQL DB, playlist, and premium.",
     image: "/marmut.jpg",
     link: "https://web-production-8be4.up.railway.app/",
+    role: "Fullstack Developer",
+    techStack: ["HTML/CSS", "PostgreSQL", "Django"],
   },
 ];
 
@@ -79,13 +91,32 @@ const ProjectsPage = () => {
                 />
               </div>
 
-              {/* Judul dan Deskripsi */}
-              <h2 className="text-xl font-bold text-white mb-2">
+              {/* Judul dan Role */}
+              <h2 className="text-xl font-bold text-white mb-1">
                 {project.title}
               </h2>
+              {project.role && (
+                <span className="text-xs text-white bg-purple-600/80 px-3 py-1 rounded-full inline-block mb-2">
+                  {project.role}
+                </span>
+              )}
+
+              {/* Deskripsi */}
               <p className="text-gray-200 text-sm mb-4">{project.description}</p>
 
-              {/* Tombol Visit dan GitHub */}
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.techStack?.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="text-xs bg-pink-600 text-white px-3 py-1 rounded-full"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* Tombol Visit, GitHub, Paper */}
               <div className="flex items-center gap-3">
                 <a
                   href={project.link}
@@ -124,7 +155,7 @@ const ProjectsPage = () => {
                   >
                     <Image
                       src="/paper.png"
-                      alt="GitHub"
+                      alt="Paper"
                       width={32}
                       height={32}
                       className="w-8 h-8 md:w-9 md:h-9"
