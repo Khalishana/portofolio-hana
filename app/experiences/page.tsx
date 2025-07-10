@@ -25,7 +25,7 @@ const Experiences = () => {
       description:
         "As part of COMPFEST 16, Competition provides a platform for participants across the country to enhance their skills in information technology. I was responsible for coordinating a team of six HRD staff members and collaborating with the manager and deputy manager of Competition in order to oversee each competition branch to ensure effective coordination and collaboration across all division teams.",
       image: "/compe2.jpg",
-      skills: ["Leadership", "Event Coordination", ],
+      skills: ["Leadership", "Team Work", "Event Coordination"],
     },
   ];
 
