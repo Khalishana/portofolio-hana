@@ -36,7 +36,7 @@ const projects = [
   {
     title: "Handling Catastrophic Forgetting in TTS with Interleaved Replay",
     description:
-      "Applied interleaved learning approach to prevent catastrophic forgetting in speech synthesis models, including inference demo and research paper.",
+      "Applied interleaved learning on FastPitch TTS model to address catastrophic forgetting across sequential datasets. Delivered research paper and interactive inference demo showcasing continual learning in speech synthesis.",
     image: "/pbl.jpg",
     link: "https://ristek.link/demo-pbl",
     github: "https://github.com/Khalishana/finalcode_pbl",
@@ -47,18 +47,20 @@ const projects = [
   {
     title: "Readme",
     description:
-      "Book inventory website that support managing and buying books, making quotes, post forums.",
+      "Book inventory website utilizing HTML, CSS, JavaScript, and the Python Django framework. The project focused on building a functional and responsive web application for managing and buying books, implementing key features such as inventory tracking and buying, search functionality, and customizing book wishlist.",
     image: "/readme.jpg",
     link: "https://readme.up.railway.app/",
+    github: "https://github.com/PeBePe/readme",
     role: "Fullstack Developer",
     techStack: ["Django", "JavaScript", "HTML/CSS"],
   },
   {
     title: "Marmut",
     description:
-      "Song inventory with role-based access built with PostgreSQL DB, playlist, and premium.",
+      "Song inventory website built with HTML, CSS, JavaScript,  Python Django framework and PostgreSQL as database. The project focused on building a functional web application designed with role-based access control, allowing users to explore and manage song inventory based on their subscription level (regular and premium). Implement key features such as song search, song playlist, and user management (subscribe as premium user).",
     image: "/marmut.jpg",
     link: "https://web-production-8be4.up.railway.app/",
+    github: "https://github.com/kelompok9-basdat/tk3-marmut",
     role: "Fullstack Developer",
     techStack: ["HTML/CSS", "PostgreSQL", "Django"],
   },
